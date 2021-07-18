@@ -22,9 +22,8 @@ export const Container = styled.section`
 
     @media (max-width: 450px){
         width: 100vw;
-        height: 100vh;
         display: block;
-
+        /* height: initial; */
         
         background: linear-gradient(180deg, rgba(0,0,0,0.45) 50%, rgba(0,0,0,1) 100%), url(${backgroundImage});
         background-color: #000;

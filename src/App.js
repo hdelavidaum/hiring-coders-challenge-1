@@ -1,10 +1,9 @@
-import { ContentContainer, InputSection } from "./components";
-import { ProductsWrapper } from "./styles";
+import { ContentContainer, InputSection, ProductsSection } from "./components";
 
 const App = () => {
   return (
     <ContentContainer>
-      <ProductsWrapper>Montando ainda</ProductsWrapper>
+      <ProductsSection />
       <InputSection />
     </ContentContainer>
   );
