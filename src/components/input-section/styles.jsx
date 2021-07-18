@@ -22,6 +22,12 @@ export const InputsWrapper = styled.div`
     flex-flow: column nowrap;
     place-content: center;
     align-items: center;
+
+    @media (max-width: 450px) {
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto 25px 0;
+    }
 `
 
 export const Title = styled.h1`
@@ -34,4 +40,8 @@ export const Title = styled.h1`
     margin-bottom: 35px;
 
     animation: ${changeColor} 1250ms linear infinite;
+
+    @media (max-width: 450px) {
+        width: 85%;
+    }
 `

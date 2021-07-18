@@ -21,11 +21,18 @@ export const Container = styled.section`
     background-position: bottom;
 
     @media (max-width: 450px){
+        width: 100vw;
+        height: 100vh;
+        display: block;
+
+        
         background: linear-gradient(180deg, rgba(0,0,0,0.45) 50%, rgba(0,0,0,1) 100%), url(${backgroundImage});
         background-color: #000;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+
+        overflow-y: scroll
     }
 `
 
