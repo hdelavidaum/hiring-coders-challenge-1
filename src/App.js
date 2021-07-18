@@ -1,7 +1,13 @@
-import ContentContainer from "./components/content-container";
+import { ContentContainer, InputSection } from "./components";
+import { ProductsWrapper } from "./styles";
 
-function App() {
-  return <ContentContainer>Em construção...</ContentContainer>;
-}
+const App = () => {
+  return (
+    <ContentContainer>
+      <ProductsWrapper>Montando ainda</ProductsWrapper>
+      <InputSection />
+    </ContentContainer>
+  );
+};
 
 export default App;

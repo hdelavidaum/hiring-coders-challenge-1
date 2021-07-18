@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const InputWrapper = styled.div`
     width: 250px;
+    font-size: 17px;
+
+
+    &:last-of-type{
+        margin-bottom: 30px;
+    }
     `;
 
 export const InputStyled = styled.input`
@@ -9,14 +15,18 @@ export const InputStyled = styled.input`
     border: none;
     
     width: 100%;
-    height: 24px;
-    margin: 13px 30px 45px 0;
+    height: 38px;
+    margin-top: 13px;
+    margin-bottom: 30px;
     padding: 7px;
 
     text-align: center;
     border-radius: 5px;
 
-    
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+
     &:focus,
     &:hover {
         box-shadow: 0 0 3px 5px #a00;
@@ -26,7 +36,7 @@ export const InputStyled = styled.input`
 export const Label = styled.label`
     height: 20px;
     font-size: 17px;
+
     font-weight: 700;
-    color: #fff;
     text-align: left;
 `;
