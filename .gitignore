@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# personal add
+.vscode
+old_tsconfig.*
+# /config
+# scripts
