@@ -1,7 +1,7 @@
 import {ButtonStyled} from './styles'
 
-const Button = ({label, onClick}) => {
-    return <ButtonStyled onClick={onClick}>{label}</ButtonStyled>
+const Button = ({label, onClick, disabled}) => {
+    return <ButtonStyled onClick={onClick} disabled={disabled}>{label}</ButtonStyled>
 }
 
 export default Button;

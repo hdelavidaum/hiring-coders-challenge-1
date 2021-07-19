@@ -58,11 +58,11 @@ export const ProductsWrapper = styled.div`
 
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(175, 35, 35, 1);
+        border-radius: 20px;
     }
 
     ::-webkit-scrollbar-thumb {
         background-color: darkgrey;
-        outline: 1px solid slategrey;
         border-radius: 20px;
         width: 2px;
     }

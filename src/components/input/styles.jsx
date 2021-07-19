@@ -5,7 +5,7 @@ export const InputWrapper = styled.div`
     font-size: 17px;
 
 
-    &:last-of-type{
+    &:nth-child(3){
         margin-bottom: 30px;
     }
     `;

@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
-import { Input, Button } from "../";
-import {Title, InputsWrapper} from './styles'
+import { Input, Button, Loader } from "../";
+import { Title, InputsWrapper } from './styles'
 
 
 const InputSection = () => {
@@ -9,6 +9,7 @@ const InputSection = () => {
         name: "",
         email: "",
     });
+    const [sending, setSending] = useState(false)
     
     const handleOnChange = useCallback(
     (e) => {
@@ -20,8 +21,16 @@ const InputSection = () => {
     [userData]
     );
 
-    const handleOnClick = () =>
-    window.localStorage.setItem("userData", JSON.stringify(userData));
+    const handleOnClick = () => {
+        setSending(true)
+        
+        window.localStorage.setItem("userData", JSON.stringify(userData))
+        
+        setTimeout(() => {
+            setUserData({name: "", email: ""})
+            setSending(false)
+        }, 1500)
+    };
     
     return (
         <InputsWrapper>
@@ -42,7 +51,7 @@ const InputSection = () => {
             onChange={handleOnChange}
             value={userData.email}
             />
-            <Button label="Inscrever" onClick={handleOnClick} />
+            {!sending ? <Button label="Enviar" onClick={handleOnClick} disabled={!!!userData.name || !!!userData.email}/> : <Loader /> }
         </InputsWrapper>
     )
 }
